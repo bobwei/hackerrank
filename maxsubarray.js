@@ -25,11 +25,11 @@ var maxSubarray = function(arr) {
 };
 
 var processData = function(input) {
-  var split_input = input.split('\n');
-  var n = parseInt(split_input[0], 10);
+  var splitInput = input.split('\n');
+  var n = parseInt(splitInput[0], 10);
   var output = [];
   for (var i = 1; i <= 2 * n - 1; i += 2) {
-    var arr = split_input[i + 1]
+    var arr = splitInput[i + 1]
       .split(' ')
       .map(function(j){
         return parseInt(j, 10);
